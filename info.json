@@ -1,0 +1,58 @@
+{
+  "personalInfo": {
+    "name": "Rinju Pokhrel",
+    "title": "CSIT Student | Software Developer",
+    "email": "rinjupokhrel91@gmail.com",
+   
+    "birthday": "October 4, 2005",
+    "location": "Kathmandu,Nepal",
+    "profileImage": "https://avatars.githubusercontent.com/u/193068850?v=4",
+    "socialLinks": {
+      "github": "https://github.com/Rinju-Pokhrel1",
+      "linkedin": "https://www.linkedin.com/in/rinjupokhrel"
+    }
+  },
+  "about": {
+    "description": "A passionate and driven Computer Science student from Nepal, I’m on an exciting journey through code, creativity, and continuous learning. With a deep curiosity for how technology shapes our world, I immerse myself in discovering innovative solutions to real-world problems.",
+    "motivation": "Whether it’s collaborating on open-source projects, building applications that solve everyday challenges, or experimenting with new tech stacks, I see every challenge as an opportunity to grow. My mission is to turn ideas into reality through the power of code and contribute meaningfully to the global tech community."
+  },
+  "services": [
+  {
+    "icon": "💻",
+    "title": "C Programming",
+    "description": "Strong foundation in C programming with expertise in data structures, algorithms, and system-level programming."
+  },
+  {
+    "icon": "🐍",
+    "title": "Python",
+    "description": "Proficient in Python for scripting, automation, data analysis, and basic machine learning applications."
+  },
+  {
+    "icon": "🔧",
+    "title": "Git & GitHub",
+    "description": "Skilled in version control and collaboration using Git and GitHub, managing branches, pull requests, and code reviews."
+  },
+  {
+    "icon": "💻",
+    "title": "C++ Programming",
+    "description": "Experienced in C++ for object-oriented programming, efficient coding practices, and performance optimization."
+  }
+],
+  "navigation": [
+    {
+      "name": "About",
+      "href": "#about",
+      "active": true
+    },
+    {
+      "name": "Resume",
+      "href": "#resume",
+      "active": false
+    },
+    {
+      "name": "Contact",
+      "href": "#contact",
+      "active": false
+    }
+  ]
+}

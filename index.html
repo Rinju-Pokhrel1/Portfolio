@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rinju Pokhrel - CSIT Student and Software Developer specializing in building applications that makes real world impact. Portfolio showcasing skills and projects.">
+    <meta name="keywords" content="Rinju Pokhrel, Software Developer, CSIT Student, Web Development, AI, Machine Learning, Cloud Computing, Portfolio">
+    <meta name="author" content="Rinju Pokhrel">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rinjupokhrel.com.np/">
+    <meta property="og:title" content="Rinju Pokhrel - Software Developer Portfolio">
+    <meta property="og:description" content="CSIT Student and Software Developer specializing in building applications that makes real world impact.">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/193068850?v=4">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rinjupokhrel.com.np/">
+    <meta property="twitter:title" content="Rinju Pokhrel - Software Developer Portfolio">
+    <meta property="twitter:description" content="CSIT Student and Software Developer specializing in building applications that makes real world impact.">
+    <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/193068850?v=4">
+
+    <title>Rinju Pokhrel - Software Developer Portfolio</title>
+    <link rel="canonical" href="https://rinjupokhrel.com.np/">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f59e0b',
+                        dark: '#1f2937',
+                        'card-bg': '#374151'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-white font-sans">
+    <div class="min-h-screen flex flex-col lg:flex-row max-w-7xl mx-auto">
+        <!-- Left Sidebar -->
+        <aside class="w-full lg:w-80  p-6 lg:p-8 flex flex-col lg:min-h-screen lg:fixed">
+            <!-- Profile Section -->
+            <header class="text-center mb-8">
+                <div class="w-32 h-32 lg:w-48 lg:h-48 mx-auto mb-6 rounded-2xl overflow-hidden bg-gradient-to-br from-purple-500 to-pink-500">
+                    <img id="profileImage" class="w-full h-full object-cover" alt="Rinju Pokhrel Profile Picture" src="https://avatars.githubusercontent.com/u/193068850?v=4">
+                </div>
+                <h1 id="profileName" class="text-xl lg:text-2xl font-bold mb-2"></h1>
+                <p id="profileTitle" class="text-gray-400 text-sm tracking-wide mb-4"></p>
+                
+                <!-- Social Links - Moved here for better positioning -->
+                <div class="flex justify-center space-x-4 mb-6">
+                    <a id="githubLink" href="#" class="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-300" aria-label="GitHub Profile" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github text-lg"></i>
+                    </a>
+                    <a id="linkedinLink" href="#" class="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-300" aria-label="LinkedIn Profile" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin text-lg"></i>
+                    </a>
+                </div>
+            </header>
+
+            <!-- Contact Info -->
+            <div class="space-y-6 mb-8 ">
+                <div class="flex items-center space-x-4">
+                    <div class="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-envelope text-primary"></i>
+                    </div>
+                    <div class="min-w-0 flex-1">
+                        <p class="text-xs text-gray-400 uppercase tracking-wide">EMAIL</p>
+                        <p id="profileEmail" class="text-sm break-all"></p>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <div class="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-birthday-cake text-primary"></i>
+                    </div>
+                    <div class="min-w-0 flex-1">
+                        <p class="text-xs text-gray-400 uppercase tracking-wide">BIRTHDAY</p>
+                        <p id="profileBirthday" class="text-sm"></p>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <div class="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-map-marker-alt text-primary"></i>
+                    </div>
+                    <div class="min-w-0 flex-1">
+                        <p class="text-xs text-gray-400 uppercase tracking-wide">LOCATION</p>
+                        <p id="profileLocation" class="text-sm"></p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 lg:p-16 lg:ml-80">
+            <!-- Navigation -->
+            <nav class="flex justify-center lg:justify-end mb-8 lg:mb-12" role="navigation" aria-label="Main navigation">
+                <div class="flex bg-card-bg rounded-lg p-1 overflow-x-auto" id="navigation">
+                    <!-- Navigation items will be loaded here -->
+                </div>
+            </nav>
+
+            <!-- About Section -->
+            <section id="about" class="mb-12 lg:mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+                    About Me
+                    <div class="w-12 h-1 bg-primary mt-2"></div>
+                </h2>
+                
+                <div class="space-y-6 text-gray-300 leading-relaxed">
+                    <p id="aboutDescription" class="text-base lg:text-lg"></p>
+                    <p id="aboutMotivation" class="text-base lg:text-lg"></p>
+                </div>
+            </section>
+
+            <!-- What I'm Doing Section -->
+            <section id="services" class="mb-12 lg:mb-16">
+                <h2 class="text-2xl lg:text-3xl font-bold mb-8">What I'm Doing</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="servicesGrid">
+                    <!-- Services will be loaded here -->
+                </div>
+            </section>
+
+            <!-- <!-- Resume Section (Hidden by default) -->
+            <section id="resume" class="mb-12 lg:mb-16 hidden">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+                    Resume
+                    <div class="w-12 h-1 bg-primary mt-2"></div>
+                </h2>
+                <div class="text-center py-20">
+                    <p class="text-gray-400 text-lg">Resume section coming soon...</p>
+                </div>
+            </section>
+
+            <!-- Contact Section (Hidden by default) -->
+            <section id="contact" class="mb-12 lg:mb-16 hidden">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+                    Contact
+                    <div class="w-12 h-1 bg-primary mt-2"></div>
+                </h2>
+                <div class="text-center py-20">
+                    <p class="text-gray-400 text-lg">Contact section coming soon...</p>
+                </div>
+            </section>
+        </main>
+    </div> -->
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rinju Pokhrel",
+        "jobTitle": "Software Developer",
+        "description": "CSIT Student and Software Developer specializing in building applications that makes real world impact",
+        "url": "https://rinjupokhrel.com.np/",
+        "image": "https://avatars.githubusercontent.com/u/193068850?v=4",
+        "sameAs": [
+            "https://github.com/rinjupokhrel",
+            "https://linkedin.com/in/rinjupokhrel"
+        ],
+        "knowsAbout": [
+            "Web Development",
+            "Software Development",
+            "Artificial Intelligence",
+            "Machine Learning",
+            "Cloud Computing",
+            "DevOps"
+        ]
+    }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
