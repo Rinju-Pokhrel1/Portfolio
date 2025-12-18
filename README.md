@@ -64,41 +64,7 @@ Then visit `http://localhost:8080` in your browser.
 - Flexible profile image sizing
 - Improved contact information layout
 
-## 🎨 Customization
 
-### Personal Information
-
-Edit the `info.json` file to update:
-
-```json
-{
-  "personalInfo": {
-    "name": "Your Name",
-    "title": "Your Title",
-    "email": "your.email@example.com",
-    "birthday": "Month Day, Year",
-    "location": "Your City, Country",
-    "profileImage": "path/to/your/image.jpg",
-    "socialLinks": {
-      "github": "https://github.com/yourusername",
-      "linkedin": "https://linkedin.com/in/yourusername"
-    }
-  }
-}
-```
-
-### Styling
-
-- **Colors**: Modify the Tailwind config in `index.html` or add custom CSS in `styles.css`
-- **Primary Color**: Currently set to `#f59e0b` (amber)
-- **Dark Theme**: `#1f2937` (dark gray) with `#374151` (card background)
-- **Fonts**: Uses system font stack for optimal loading
-
-### Adding New Sections
-
-1. Add the section data to `info.json`
-2. Create the corresponding HTML structure in `index.html`
-3. Update the JavaScript in `script.js` to populate the new section
 
 ## 🔧 Technologies Used
 
