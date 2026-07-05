@@ -1,183 +1,1287 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- ================= META ================= -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rinju Pokhrel - CSIT Student and Software Developer specializing in building applications that makes real world impact. Portfolio showcasing skills and projects.">
-    <meta name="keywords" content="Rinju Pokhrel, Software Developer, CSIT Student, Web Development, AI, Machine Learning, Cloud Computing, Portfolio">
+
+    <title>Rinju Pokhrel | Software Developer</title>
+
+    <meta name="description"
+        content="Rinju Pokhrel is a Computer Science student and aspiring Software Developer passionate about React, JavaScript, Node.js, and building modern web applications.">
+
+    <meta name="keywords"
+        content="Rinju Pokhrel, Software Developer, React Developer, JavaScript, Node.js, Portfolio, Nepal">
+
     <meta name="author" content="Rinju Pokhrel">
+
     <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph / Facebook -->
+
+    <!-- Open Graph -->
+
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rinjupokhrel.com.np/">
-    <meta property="og:title" content="Rinju Pokhrel - Software Developer Portfolio">
-    <meta property="og:description" content="CSIT Student and Software Developer specializing in building applications that makes real world impact.">
-    <meta property="og:image" content="https://avatars.githubusercontent.com/u/193068850?v=4">
+    <meta property="og:title" content="Rinju Pokhrel | Software Developer">
+    <meta property="og:description"
+        content="Computer Science student passionate about software engineering and modern web development.">
+
+    <meta property="og:image"
+        content="https://avatars.githubusercontent.com/u/193068850?v=4">
+
+    <meta property="og:url"
+        content="https://rinjupokhrel.com.np/">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://rinjupokhrel.com.np/">
-    <meta property="twitter:title" content="Rinju Pokhrel - Software Developer Portfolio">
-    <meta property="twitter:description" content="CSIT Student and Software Developer specializing in building applications that makes real world impact.">
-    <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/193068850?v=4">
 
-    <title>Rinju Pokhrel - Software Developer Portfolio</title>
-    <link rel="canonical" href="https://rinjupokhrel.com.np/">
-    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rinju Pokhrel | Software Developer">
+    <meta name="twitter:description"
+        content="Computer Science student passionate about software engineering and modern web development.">
+
+    <meta name="twitter:image"
+        content="https://avatars.githubusercontent.com/u/193068850?v=4">
+
+    <!-- Tailwind -->
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
     <script>
+
         tailwind.config = {
+
             theme: {
+
                 extend: {
+
                     colors: {
-                        primary: '#f59e0b',
-                        dark: '#1f2937',
-                        'card-bg': '#374151'
+
+                        primary: "#8B5CF6",
+
+                        dark: "#111827",
+
+                        card: "#1F2937"
+
                     }
+
                 }
+
             }
+
         }
+
     </script>
+
 </head>
+
 <body class="bg-dark text-white font-sans">
-    <div class="min-h-screen flex flex-col lg:flex-row max-w-7xl mx-auto">
-        <!-- Left Sidebar -->
-        <aside class="w-full lg:w-80  p-6 lg:p-8 flex flex-col lg:min-h-screen lg:fixed">
-            <!-- Profile Section -->
-            <header class="text-center mb-8">
-                <div class="w-32 h-32 lg:w-48 lg:h-48 mx-auto mb-6 rounded-2xl overflow-hidden bg-gradient-to-br from-purple-500 to-pink-500">
-                    <img id="profileImage" class="w-full h-full object-cover" alt="Rinju Pokhrel Profile Picture" src="https://avatars.githubusercontent.com/u/193068850?v=4">
-                </div>
-                <h1 id="profileName" class="text-xl lg:text-2xl font-bold mb-2"></h1>
-                <p id="profileTitle" class="text-gray-400 text-sm tracking-wide mb-4"></p>
-                
-                <!-- Social Links - Moved here for better positioning -->
-                <div class="flex justify-center space-x-4 mb-6">
-                    <a id="githubLink" href="#" class="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-300" aria-label="GitHub Profile" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-github text-lg"></i>
-                    </a>
-                    <a id="linkedinLink" href="#" class="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-300" aria-label="LinkedIn Profile" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-linkedin text-lg"></i>
-                    </a>
-                </div>
-            </header>
 
-            <!-- Contact Info -->
-            <div class="space-y-6 mb-8 ">
-                <div class="flex items-center space-x-4">
-                    <div class="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <i class="fas fa-envelope text-primary"></i>
-                    </div>
-                    <div class="min-w-0 flex-1">
-                        <p class="text-xs text-gray-400 uppercase tracking-wide">EMAIL</p>
-                        <p id="profileEmail" class="text-sm break-all"></p>
-                    </div>
+<div class="max-w-7xl mx-auto lg:flex">
+
+<!-- ================= SIDEBAR ================= -->
+
+<aside
+class="lg:w-80 w-full bg-card lg:min-h-screen lg:sticky top-0 p-8 border-r border-gray-700">
+
+<div class="text-center">
+
+<img
+src="https://avatars.githubusercontent.com/u/193068850?v=4"
+alt="Rinju Pokhrel"
+class="w-44 h-44 rounded-3xl mx-auto object-cover shadow-xl border-4 border-primary">
+
+<h1 class="text-3xl font-bold mt-6">
+
+Rinju Pokhrel
+
+</h1>
+
+<p class="text-primary mt-2">
+
+Computer Science Student
+
+</p>
+
+<p class="text-gray-400">
+
+Aspiring Software Developer
+
+</p>
+
+</div>
+
+<!-- Contact -->
+
+<div class="mt-10 space-y-6">
+
+<div class="flex items-center">
+
+<div class="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center">
+
+<i class="fa-solid fa-envelope text-primary"></i>
+
+</div>
+
+<div class="ml-4">
+
+<p class="text-xs text-gray-400 uppercase">
+
+Email
+
+</p>
+
+<p>
+
+rinjupokhrel91@gmail.com
+
+</p>
+
+</div>
+
+</div>
+
+<div class="flex items-center">
+
+<div class="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center">
+
+<i class="fa-solid fa-location-dot text-primary"></i>
+
+</div>
+
+<div class="ml-4">
+
+<p class="text-xs text-gray-400 uppercase">
+
+Location
+
+</p>
+
+<p>
+
+Kathmandu, Nepal 🇳🇵
+
+</p>
+
+</div>
+
+</div>
+
+<div class="flex items-center">
+
+<div class="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center">
+
+<i class="fa-solid fa-graduation-cap text-primary"></i>
+
+</div>
+
+<div class="ml-4">
+
+<p class="text-xs text-gray-400 uppercase">
+
+Education
+
+</p>
+
+<p>
+
+BSc. CSIT
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- Social -->
+
+<div class="flex justify-center gap-5 mt-10">
+
+<a href="https://github.com/Rinju-Pokhrel1">
+
+<i class="fab fa-github text-3xl hover:text-primary"></i>
+
+</a>
+
+<a href="https://linkedin.com/in/rinjupokhrel">
+
+<i class="fab fa-linkedin text-3xl hover:text-primary"></i>
+
+</a>
+
+<a href="mailto:rinjupokhrel91@gmail.com">
+
+<i class="fas fa-envelope text-3xl hover:text-primary"></i>
+
+</a>
+
+</div>
+
+</aside>
+
+<!-- ================= MAIN ================= -->
+
+<main class="flex-1 p-8 lg:p-14">
+
+<!-- Navigation -->
+
+<nav class="flex justify-end mb-16">
+
+<div
+class="bg-card rounded-xl flex overflow-hidden">
+
+<a href="#about"
+class="px-6 py-4 hover:bg-primary hover:text-black transition">
+
+About
+
+</a>
+
+<a href="#services"
+class="px-6 py-4 hover:bg-primary hover:text-black transition">
+
+Services
+
+</a>
+
+<a href="#skills"
+class="px-6 py-4 hover:bg-primary hover:text-black transition">
+
+Skills
+
+</a>
+
+<a href="#projects"
+class="px-6 py-4 hover:bg-primary hover:text-black transition">
+
+Projects
+
+</a>
+
+<a href="#contact"
+class="px-6 py-4 hover:bg-primary hover:text-black transition">
+
+Contact
+
+</a>
+
+</div>
+
+</nav>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+<h2 class="text-4xl font-bold">
+
+About Me
+
+</h2>
+
+<div class="w-24 h-1 bg-primary rounded-full mt-3 mb-8"></div>
+
+<p class="text-gray-300 leading-8 text-lg">
+
+Hi, I'm
+<strong class="text-primary">
+
+Rinju Pokhrel
+
+</strong>,
+a Computer Science and Information Technology (BSc. CSIT) student passionate about software engineering, web development, and building impactful digital experiences.
+
+</p>
+
+<br>
+
+<p class="text-gray-300 leading-8 text-lg">
+
+I enjoy creating responsive web applications using HTML, CSS, JavaScript, React, and Tailwind CSS. Currently, I'm expanding my knowledge of Node.js and MongoDB while strengthening my problem-solving and software engineering skills through projects, hackathons, and continuous learning.
+
+</p>
+
+<br>
+
+<p class="text-gray-300 leading-8 text-lg">
+
+My goal is to become a professional Software Developer who builds scalable, user-friendly, and meaningful applications that solve real-world problems.
+
+</p>
+
+</section>
+
+<!-- NEXT: Services Section -->
+
+    <!-- ================= SERVICES ================= -->
+
+<section id="services" class="mt-20">
+
+    <h2 class="text-4xl font-bold">
+
+        What I'm Doing
+
+    </h2>
+
+    <div class="w-24 h-1 bg-primary rounded-full mt-3 mb-10"></div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+        <!-- Card 1 -->
+
+        <div
+            class="bg-card rounded-2xl p-7 hover:-translate-y-2 transition duration-300 border border-gray-700">
+
+            <div class="flex items-start">
+
+                <div
+                    class="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center">
+
+                    <i class="fas fa-laptop-code text-primary text-2xl"></i>
+
                 </div>
 
-                <div class="flex items-center space-x-4">
-                    <div class="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <i class="fas fa-birthday-cake text-primary"></i>
-                    </div>
-                    <div class="min-w-0 flex-1">
-                        <p class="text-xs text-gray-400 uppercase tracking-wide">BIRTHDAY</p>
-                        <p id="profileBirthday" class="text-sm"></p>
-                    </div>
+                <div class="ml-5">
+
+                    <h3 class="text-xl font-semibold">
+
+                        Software Development
+
+                    </h3>
+
+                    <p class="text-gray-400 mt-3 leading-7">
+
+                        Developing modern software solutions with clean,
+                        maintainable, and scalable code while following best
+                        software engineering practices.
+
+                    </p>
+
                 </div>
 
-                <div class="flex items-center space-x-4">
-                    <div class="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <i class="fas fa-map-marker-alt text-primary"></i>
-                    </div>
-                    <div class="min-w-0 flex-1">
-                        <p class="text-xs text-gray-400 uppercase tracking-wide">LOCATION</p>
-                        <p id="profileLocation" class="text-sm"></p>
-                    </div>
-                </div>
             </div>
-        </aside>
 
-        <!-- Main Content -->
-        <main class="flex-1 p-6 lg:p-16 lg:ml-80">
-            <!-- Navigation -->
-            <nav class="flex justify-center lg:justify-end mb-8 lg:mb-12" role="navigation" aria-label="Main navigation">
-                <div class="flex bg-card-bg rounded-lg p-1 overflow-x-auto" id="navigation">
-                    <!-- Navigation items will be loaded here -->
+        </div>
+
+        <!-- Card 2 -->
+
+        <div
+            class="bg-card rounded-2xl p-7 hover:-translate-y-2 transition duration-300 border border-gray-700">
+
+            <div class="flex items-start">
+
+                <div
+                    class="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center">
+
+                    <i class="fab fa-react text-primary text-2xl"></i>
+
                 </div>
-            </nav>
 
-            <!-- About Section -->
-            <section id="about" class="mb-12 lg:mb-16">
-                <h2 class="text-3xl lg:text-4xl font-bold mb-6">
-                    About Me
-                    <div class="w-12 h-1 bg-primary mt-2"></div>
-                </h2>
-                
-                <div class="space-y-6 text-gray-300 leading-relaxed">
-                    <p id="aboutDescription" class="text-base lg:text-lg"></p>
-                    <p id="aboutMotivation" class="text-base lg:text-lg"></p>
+                <div class="ml-5">
+
+                    <h3 class="text-xl font-semibold">
+
+                        React Development
+
+                    </h3>
+
+                    <p class="text-gray-400 mt-3 leading-7">
+
+                        Building responsive and interactive user interfaces
+                        using React, JavaScript, Tailwind CSS, and modern
+                        frontend technologies.
+
+                    </p>
+
                 </div>
-            </section>
 
-            <!-- What I'm Doing Section -->
-            <section id="services" class="mb-12 lg:mb-16">
-                <h2 class="text-2xl lg:text-3xl font-bold mb-8">What I'm Doing</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="servicesGrid">
-                    <!-- Services will be loaded here -->
+            </div>
+
+        </div>
+
+        <!-- Card 3 -->
+
+        <div
+            class="bg-card rounded-2xl p-7 hover:-translate-y-2 transition duration-300 border border-gray-700">
+
+            <div class="flex items-start">
+
+                <div
+                    class="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center">
+
+                    <i class="fas fa-server text-primary text-2xl"></i>
+
                 </div>
-            </section>
 
-            <!-- <!-- Resume Section (Hidden by default) -->
-            <section id="resume" class="mb-12 lg:mb-16 hidden">
-                <h2 class="text-3xl lg:text-4xl font-bold mb-6">
-                    Resume
-                    <div class="w-12 h-1 bg-primary mt-2"></div>
-                </h2>
-                <div class="text-center py-20">
-                    <p class="text-gray-400 text-lg">Resume section coming soon...</p>
+                <div class="ml-5">
+
+                    <h3 class="text-xl font-semibold">
+
+                        Backend Learning
+
+                    </h3>
+
+                    <p class="text-gray-400 mt-3 leading-7">
+
+                        Currently expanding my backend development knowledge
+                        with Node.js, REST APIs, authentication, and MongoDB.
+
+                    </p>
+
                 </div>
-            </section>
 
-            <!-- Contact Section (Hidden by default) -->
-            <section id="contact" class="mb-12 lg:mb-16 hidden">
-                <h2 class="text-3xl lg:text-4xl font-bold mb-6">
-                    Contact
-                    <div class="w-12 h-1 bg-primary mt-2"></div>
-                </h2>
-                <div class="text-center py-20">
-                    <p class="text-gray-400 text-lg">Contact section coming soon...</p>
+            </div>
+
+        </div>
+
+        <!-- Card 4 -->
+
+        <div
+            class="bg-card rounded-2xl p-7 hover:-translate-y-2 transition duration-300 border border-gray-700">
+
+            <div class="flex items-start">
+
+                <div
+                    class="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center">
+
+                    <i class="fas fa-book-open text-primary text-2xl"></i>
+
                 </div>
-            </section>
-        </main>
-    </div> -->
 
-    <!-- Structured Data for SEO -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Rinju Pokhrel",
-        "jobTitle": "Software Developer",
-        "description": "CSIT Student and Software Developer specializing in building applications that makes real world impact",
-        "url": "https://rinjupokhrel.com.np/",
-        "image": "https://avatars.githubusercontent.com/u/193068850?v=4",
-        "sameAs": [
-            "https://github.com/rinjupokhrel",
-            "https://linkedin.com/in/rinjupokhrel"
-        ],
-        "knowsAbout": [
-            "Web Development",
-            "Software Development",
-            "Artificial Intelligence",
-            "Machine Learning",
-            "Cloud Computing",
-            "DevOps"
-        ]
-    }
-    </script>
+                <div class="ml-5">
 
-    <script src="script.js"></script>
+                    <h3 class="text-xl font-semibold">
+
+                        Continuous Learning
+
+                    </h3>
+
+                    <p class="text-gray-400 mt-3 leading-7">
+
+                        Passionate about learning new technologies, contributing
+                        to open-source, participating in hackathons, and
+                        improving every day.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills" class="mt-24">
+
+    <h2 class="text-4xl font-bold">
+
+        Tech Stack
+
+    </h2>
+
+    <div class="w-24 h-1 bg-primary rounded-full mt-3 mb-10"></div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+        <!-- Languages -->
+
+        <div class="bg-card rounded-2xl p-8">
+
+            <h3 class="text-2xl font-semibold mb-6">
+
+                Languages
+
+            </h3>
+
+            <div class="flex flex-wrap gap-4">
+
+                <span class="skill">JavaScript</span>
+
+                <span class="skill">Python</span>
+
+                <span class="skill">C</span>
+
+                <span class="skill">C++</span>
+
+                <span class="skill">HTML5</span>
+
+                <span class="skill">CSS3</span>
+
+                <span class="skill">SQL</span>
+
+            </div>
+
+        </div>
+
+        <!-- Frontend -->
+
+        <div class="bg-card rounded-2xl p-8">
+
+            <h3 class="text-2xl font-semibold mb-6">
+
+                Frontend
+
+            </h3>
+
+            <div class="flex flex-wrap gap-4">
+
+                <span class="skill">React</span>
+
+                <span class="skill">Tailwind CSS</span>
+
+                <span class="skill">Vite</span>
+
+                <span class="skill">Responsive Design</span>
+
+            </div>
+
+        </div>
+
+        <!-- Backend -->
+
+        <div class="bg-card rounded-2xl p-8">
+
+            <h3 class="text-2xl font-semibold mb-6">
+
+                Backend
+
+            </h3>
+
+            <div class="flex flex-wrap gap-4">
+
+                <span class="skill">Node.js</span>
+
+                <span class="skill">REST APIs</span>
+
+            </div>
+
+        </div>
+
+        <!-- Database -->
+
+        <div class="bg-card rounded-2xl p-8">
+
+            <h3 class="text-2xl font-semibold mb-6">
+
+                Database
+
+            </h3>
+
+            <div class="flex flex-wrap gap-4">
+
+                <span class="skill">MongoDB</span>
+
+                <span class="skill">MySQL</span>
+
+            </div>
+
+        </div>
+
+        <!-- Tools -->
+
+        <div class="bg-card rounded-2xl p-8 md:col-span-2">
+
+            <h3 class="text-2xl font-semibold mb-6">
+
+                Tools & Technologies
+
+            </h3>
+
+            <div class="flex flex-wrap gap-4">
+
+                <span class="skill">Git</span>
+
+                <span class="skill">GitHub</span>
+
+                <span class="skill">VS Code</span>
+
+                <span class="skill">Linux</span>
+
+                <span class="skill">Postman</span>
+
+                <span class="skill">Figma</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- ================= PROJECTS ================= -->
+
+<section id="projects" class="mt-24">
+
+    <h2 class="text-4xl font-bold">
+        Featured Projects
+    </h2>
+
+    <div class="w-24 h-1 bg-primary rounded-full mt-3 mb-10"></div>
+
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+
+        <!-- ================= MemoBridge ================= -->
+
+        <div class="bg-card rounded-2xl overflow-hidden border border-gray-700 hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+
+            <img src="assets/images/memobridge.png"
+                alt="MemoBridge"
+                class="w-full h-52 object-cover">
+
+            <div class="p-6">
+
+                <h3 class="text-2xl font-semibold">
+                    🧠 MemoBridge
+                </h3>
+
+                <p class="text-gray-400 mt-4 leading-7">
+
+                    A modern platform designed to bridge the digital divide through
+                    educational resources and reminiscence therapy support for
+                    dementia care.
+
+                </p>
+
+                <div class="flex flex-wrap gap-2 mt-5">
+
+                    <span class="skill">React</span>
+                    <span class="skill">Node.js</span>
+                    <span class="skill">MongoDB</span>
+
+                </div>
+
+                <div class="flex gap-4 mt-8">
+
+                    <a href="#"
+                        class="flex-1 text-center bg-primary text-black py-3 rounded-xl font-semibold hover:scale-105 transition">
+
+                        Live Demo
+
+                    </a>
+
+                    <a href="#"
+                        class="flex-1 text-center border border-primary py-3 rounded-xl hover:bg-primary hover:text-black transition">
+
+                        GitHub
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ================= BatoVetiyo ================= -->
+
+        <div class="bg-card rounded-2xl overflow-hidden border border-gray-700 hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+
+            <img src="assets/images/batovetiyo.png"
+                alt="BatoVetiyo"
+                class="w-full h-52 object-cover">
+
+            <div class="p-6">
+
+                <h3 class="text-2xl font-semibold">
+
+                    🚌 BatoVetiyo
+
+                </h3>
+
+                <p class="text-gray-400 mt-4 leading-7">
+
+                    A bilingual bus-route navigation platform that helps
+                    Kathmandu commuters search routes, locate nearby stops,
+                    and navigate public transportation more efficiently.
+
+                </p>
+
+                <div class="flex flex-wrap gap-2 mt-5">
+
+                    <span class="skill">React</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">CSS</span>
+
+                </div>
+
+                <div class="flex gap-4 mt-8">
+
+                    <a href="https://github.com/InterAsianHack025/batoKhoji.git"
+                        class="flex-1 text-center bg-primary text-black py-3 rounded-xl font-semibold hover:scale-105 transition">
+
+                        Live Demo
+
+                    </a>
+
+                    <a href="https://github.com/InterAsianHack025/batoKhoji.git"
+                        class="flex-1 text-center border border-primary py-3 rounded-xl hover:bg-primary hover:text-black transition">
+
+                        GitHub
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ================= Library ================= -->
+
+        <div class="bg-card rounded-2xl overflow-hidden border border-gray-700 hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+
+            <img src="assets/images/library.png"
+                alt="Library Management System"
+                class="w-full h-52 object-cover">
+
+            <div class="p-6">
+
+                <h3 class="text-2xl font-semibold">
+
+                    📚 Library Management
+
+                </h3>
+
+                <p class="text-gray-400 mt-4 leading-7">
+
+                    A role-based command-line Library Management System
+                    developed using Python and SQLite with authentication,
+                    book management, borrowing, and fine calculation.
+
+                </p>
+
+                <div class="flex flex-wrap gap-2 mt-5">
+
+                    <span class="skill">Python</span>
+                    <span class="skill">SQLite</span>
+
+                </div>
+
+                <div class="flex gap-4 mt-8">
+
+                    <a href="https://github.com/Rinju-Pokhrel1/Library-cli.git"
+                        class="flex-1 text-center bg-primary text-black py-3 rounded-xl font-semibold hover:scale-105 transition">
+
+                        Demo
+
+                    </a>
+
+                    <a href="https://github.com/Rinju-Pokhrel1/Library-cli.git"
+                        class="flex-1 text-center border border-primary py-3 rounded-xl hover:bg-primary hover:text-black transition">
+
+                        GitHub
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- ================= GITHUB ================= -->
+
+<section id="github" class="mt-24">
+
+    <h2 class="text-4xl font-bold">
+        GitHub Overview
+    </h2>
+
+    <div class="w-24 h-1 bg-primary rounded-full mt-3 mb-10"></div>
+
+    <!-- Stats Cards -->
+
+    <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-6 mb-10">
+
+        <div class="bg-card rounded-2xl p-6 text-center border border-gray-700">
+
+            <i class="fas fa-code text-4xl text-primary mb-4"></i>
+
+            <h3 class="text-3xl font-bold">
+                15+
+            </h3>
+
+            <p class="text-gray-400 mt-2">
+                Projects Built
+            </p>
+
+        </div>
+
+        <div class="bg-card rounded-2xl p-6 text-center border border-gray-700">
+
+            <i class="fas fa-trophy text-4xl text-primary mb-4"></i>
+
+            <h3 class="text-3xl font-bold">
+                100X
+            </h3>
+
+            <p class="text-gray-400 mt-2">
+                Hackathon Runner-Up
+            </p>
+
+        </div>
+
+        <div class="bg-card rounded-2xl p-6 text-center border border-gray-700">
+
+            <i class="fas fa-book-open text-4xl text-primary mb-4"></i>
+
+            <h3 class="text-3xl font-bold">
+                Daily
+            </h3>
+
+            <p class="text-gray-400 mt-2">
+                Continuous Learning
+            </p>
+
+        </div>
+
+        <div class="bg-card rounded-2xl p-6 text-center border border-gray-700">
+
+            <i class="fab fa-github text-4xl text-primary mb-4"></i>
+
+            <h3 class="text-3xl font-bold">
+                Open
+            </h3>
+
+            <p class="text-gray-400 mt-2">
+                Source Enthusiast
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- GitHub Stats -->
+
+    <div class="grid lg:grid-cols-2 gap-8">
+
+        <div class="bg-card rounded-2xl p-5 border border-gray-700">
+
+            <img
+                class="rounded-xl w-full"
+                src="https://github-readme-stats.vercel.app/api?username=Rinju-Pokhrel1&show_icons=true&theme=tokyonight&hide_border=true"
+                alt="GitHub Stats">
+
+        </div>
+
+        <div class="bg-card rounded-2xl p-5 border border-gray-700">
+
+            <img
+                class="rounded-xl w-full"
+                src="https://github-readme-streak-stats.herokuapp.com/?user=Rinju-Pokhrel1&theme=tokyonight&hide_border=true"
+                alt="GitHub Streak">
+
+        </div>
+
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-8 mt-8">
+
+        <div class="bg-card rounded-2xl p-5 border border-gray-700">
+
+            <img
+                class="rounded-xl w-full"
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rinju-Pokhrel1&layout=compact&theme=tokyonight&hide_border=true"
+                alt="Top Languages">
+
+        </div>
+
+        <div class="bg-card rounded-2xl p-5 border border-gray-700 flex items-center justify-center">
+
+            <img
+                class="rounded-xl w-full"
+                src="https://github-readme-activity-graph.vercel.app/graph?username=Rinju-Pokhrel1&theme=tokyo-night&hide_border=true"
+                alt="GitHub Activity Graph">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CURRENT FOCUS ================= -->
+
+<section class="mt-24">
+
+    <h2 class="text-4xl font-bold">
+        Current Focus
+    </h2>
+
+    <div class="w-24 h-1 bg-primary rounded-full mt-3 mb-10"></div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="bg-card rounded-2xl p-6 border border-gray-700">
+
+            <i class="fab fa-react text-5xl text-primary mb-5"></i>
+
+            <h3 class="text-xl font-semibold">
+                Advanced React
+            </h3>
+
+            <p class="text-gray-400 mt-3">
+                Learning reusable components, hooks, routing, state management, and scalable React architecture.
+            </p>
+
+        </div>
+
+        <div class="bg-card rounded-2xl p-6 border border-gray-700">
+
+            <i class="fab fa-node-js text-5xl text-primary mb-5"></i>
+
+            <h3 class="text-xl font-semibold">
+                Node.js
+            </h3>
+
+            <p class="text-gray-400 mt-3">
+                Expanding backend development skills with Express, REST APIs, authentication, and server-side JavaScript.
+            </p>
+
+        </div>
+
+        <div class="bg-card rounded-2xl p-6 border border-gray-700">
+
+            <i class="fas fa-database text-5xl text-primary mb-5"></i>
+
+            <h3 class="text-xl font-semibold">
+                MongoDB
+            </h3>
+
+            <p class="text-gray-400 mt-3">
+                Learning database design, CRUD operations, aggregation, and integrating MongoDB with Node.js applications.
+            </p>
+
+        </div>
+
+        <div class="bg-card rounded-2xl p-6 border border-gray-700">
+
+            <i class="fas fa-code-branch text-5xl text-primary mb-5"></i>
+
+            <h3 class="text-xl font-semibold">
+                Open Source
+            </h3>
+
+            <p class="text-gray-400 mt-3">
+                Contributing to GitHub projects, collaborating with developers, and improving software through community contributions.
+            </p>
+
+        </div>
+
+        <div class="bg-card rounded-2xl p-6 border border-gray-700">
+
+            <i class="fas fa-lightbulb text-5xl text-primary mb-5"></i>
+
+            <h3 class="text-xl font-semibold">
+                Problem Solving
+            </h3>
+
+            <p class="text-gray-400 mt-3">
+                Strengthening programming fundamentals, algorithms, and data structures through consistent practice.
+            </p>
+
+        </div>
+
+        <div class="bg-card rounded-2xl p-6 border border-gray-700">
+
+            <i class="fas fa-rocket text-5xl text-primary mb-5"></i>
+
+            <h3 class="text-xl font-semibold">
+                Career Growth
+            </h3>
+
+            <p class="text-gray-400 mt-3">
+                Preparing for software engineering internships while building impactful full-stack applications.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+    <!-- ================= RESUME ================= -->
+
+<section id="resume" class="mt-24">
+
+  
+    <div class="w-24 h-1 bg-primary rounded-full mt-3 mb-10"></div>
+
+    <div class="space-y-8">
+
+        <!-- Education -->
+
+        <div class="bg-card rounded-2xl p-8 border border-gray-700">
+
+            <div class="flex items-center mb-4">
+
+                <i class="fas fa-graduation-cap text-primary text-3xl mr-4"></i>
+
+                <h3 class="text-2xl font-semibold">
+                    Education
+                </h3>
+
+            </div>
+
+            <h4 class="text-xl font-semibold">
+
+                Bachelor of Computer Science & Information Technology (BSc. CSIT)
+
+            </h4>
+
+            <p class="text-primary mt-2">
+
+                Tribhuvan University
+
+            </p>
+
+            <p class="text-gray-400 mt-3">
+
+                Currently pursuing my Bachelor's degree with a strong focus on software engineering, web development, and problem-solving.
+
+            </p>
+
+        </div>
+
+        <!-- Achievement -->
+
+        <div class="bg-card rounded-2xl p-8 border border-gray-700">
+
+            <div class="flex items-center mb-4">
+
+                <i class="fas fa-trophy text-primary text-3xl mr-4"></i>
+
+                <h3 class="text-2xl font-semibold">
+
+                    Achievement
+
+                </h3>
+
+            </div>
+
+            <h4 class="text-xl font-semibold">
+
+                🥈 First Runner-Up — 100X Hackathon
+
+            </h4>
+
+            <p class="text-gray-400 mt-3">
+
+                Designed and developed an innovative software solution during a competitive hackathon while collaborating effectively within a team.
+
+            </p>
+
+        </div>
+
+        <!-- Learning -->
+
+        <div class="bg-card rounded-2xl p-8 border border-gray-700">
+
+            <div class="flex items-center mb-4">
+
+                <i class="fas fa-book-open text-primary text-3xl mr-4"></i>
+
+                <h3 class="text-2xl font-semibold">
+
+                    Learning Journey
+
+                </h3>
+
+            </div>
+
+            <ul class="space-y-3 text-gray-300">
+
+                <li>✔ Modern JavaScript (ES6+)</li>
+
+                <li>✔ React.js</li>
+
+                <li>✔ Tailwind CSS</li>
+
+                <li>✔ Node.js Fundamentals</li>
+
+                <li>✔ MongoDB</li>
+
+                <li>✔ Data Structures & Algorithms</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+   
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="mt-24 mb-24">
+
+    <h2 class="text-4xl font-bold">
+
+        Contact Me
+
+    </h2>
+
+    <div class="w-24 h-1 bg-primary rounded-full mt-3 mb-10"></div>
+
+    <div class="grid lg:grid-cols-2 gap-12">
+
+        <!-- Contact Info -->
+
+        <div>
+
+            <h3 class="text-2xl font-semibold mb-6">
+
+                Let's Connect 👋
+
+            </h3>
+
+            <p class="text-gray-400 leading-8">
+
+                I'm always open to discussing internship opportunities, freelance projects, open-source collaboration, or simply connecting with fellow developers.
+
+            </p>
+
+            <div class="space-y-6 mt-10">
+
+                <div class="flex items-center">
+
+                    <i class="fas fa-envelope text-primary text-2xl w-10"></i>
+
+                    <span class="ml-5">
+
+                        rinjupokhrel91@gmail.com
+
+                    </span>
+
+                </div>
+
+                <div class="flex items-center">
+
+                    <i class="fas fa-location-dot text-primary text-2xl w-10"></i>
+
+                    <span class="ml-5">
+
+                        Kathmandu, Nepal 🇳🇵
+
+                    </span>
+
+                </div>
+
+                <div class="flex items-center">
+
+                    <i class="fab fa-github text-primary text-2xl w-10"></i>
+
+                    <a href="https://github.com/Rinju-Pokhrel1"
+                        class="ml-5 hover:text-primary">
+
+                        github.com/Rinju-Pokhrel1
+
+                    </a>
+
+                </div>
+
+                <div class="flex items-center">
+
+                    <i class="fab fa-linkedin text-primary text-2xl w-10"></i>
+
+                    <a href="https://linkedin.com/in/rinjupokhrel"
+                        class="ml-5 hover:text-primary">
+
+                        linkedin.com/in/rinjupokhrel
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+      
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="border-t border-gray-700 pt-8 pb-10 text-center">
+
+    <h3 class="text-2xl font-bold">
+
+        Rinju Pokhrel
+
+    </h3>
+
+    <p class="text-gray-400 mt-3">
+
+        Computer Science Student • Aspiring Software Developer
+
+    </p>
+
+    <div class="flex justify-center gap-6 mt-8">
+
+        <a href="https://github.com/Rinju-Pokhrel1">
+
+            <i class="fab fa-github text-3xl hover:text-primary"></i>
+
+        </a>
+
+        <a href="https://linkedin.com/in/rinjupokhrel">
+
+            <i class="fab fa-linkedin text-3xl hover:text-primary"></i>
+
+        </a>
+
+        <a href="mailto:rinjupokhrel91@gmail.com">
+
+            <i class="fas fa-envelope text-3xl hover:text-primary"></i>
+
+        </a>
+
+    </div>
+
+    <p class="text-gray-500 mt-8">
+
+        © 2026 Rinju Pokhrel. All Rights Reserved.
+
+    </p>
+
+    <p class="text-gray-600 mt-2 text-sm">
+
+        Built with HTML, Tailwind CSS & JavaScript ❤️
+
+    </p>
+
+</footer>
+
+</main>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
+
+    
